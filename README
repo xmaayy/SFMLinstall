@@ -1,7 +1,3 @@
-  This is just a simple script for installing SFML on linux. It worked for me when I made and tried it, and there are no
-weird hacks that might prevent it from not working for you. Just run and be done with it. You'll still need to link and everything
-with whatever IDE you use, I cant do everything for you, but this is a nice start for those who dont wanna copy paste lines from another
-web tutorial.
+  This is just a simple script for installing SFML on linux. It worked for me when I made and tried it, and there are no weird hacks that might prevent it from not working for you. Just run and be done with it. You'll still need to link and everything with whatever IDE you use, I cant do everything for you, but this is a nice start for those who dont wanna copy paste lines from another web tutorial.
 
-  Ive tried to include every possible package it could need. If it throws an error for you comment or somehow get in touch with me
-  and ill try to get it fixed for ya.
+  Ive tried to include every possible package it could need. If it throws an error for you comment or somehow get in touch with me and ill try to get it fixed for ya.
