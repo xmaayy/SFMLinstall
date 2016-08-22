@@ -1,3 +1,5 @@
+echo Script made by Xander May
+echo Dont blame me if something goes wrong.
 echo Need to install SFML dependencies...
 
 sudo apt-get update
