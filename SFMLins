@@ -1,0 +1,46 @@
+echo Need to install SFML dependencies...
+
+sudo apt-get update
+sudo apt-get install g++ cmake git libx11-dev freeglut3-dev libjpeg-dev libfreetype6-dev libxrandr-dev libglew-dev libsndfile1-dev libopenal-dev libudev-dev libxcb-image0 libxcb-image0-dev libpthread-stubs0-dev libgl1-mesa-dev libjpeg8-dev
+
+echo I think thats all of them
+
+echo creating build directory...
+
+mkdir sfmlbuild
+cd sfmlbuild
+
+echo Downloading SFML
+
+git clone https://github.com/LaurentGomila/SFML.git
+
+cd SFML*
+
+echo Making Release Dynamic link
+cmake -G "Unix Makefiles" -D CMAKE_BUILD_TYPE=Release -D BUILD_SHARED_LIBS=TRUE .
+make
+sudo make install
+
+echo Done!
+
+echo Making Release Static link
+
+cmake -G "Unix Makefiles" -D CMAKE_BUILD_TYPE=Release -D BUILD_SHARED_LIBS=FALSE .
+make
+sudo make install
+
+echo Done!
+
+echo Making Debug Dynamic link
+cmake -G "Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D BUILD_SHARED_LIBS=TRUE .
+make
+sudo make install
+
+echo Done!
+
+echo Making Debug Static link
+cmake -G "Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D BUILD_SHARED_LIBS=FALSE .
+make
+sudo make install
+
+echo Done! Enjoy sfml...
